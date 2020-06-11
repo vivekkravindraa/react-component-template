@@ -1,0 +1,11 @@
+﻿.rdl-move-all {
+  .material-icons {
+    position: relative;
+    &:first-child {
+      left: 7px;
+    }
+    &:last-child {
+      right: 7px;
+    }
+  }
+}

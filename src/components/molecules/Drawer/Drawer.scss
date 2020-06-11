@@ -1,0 +1,23 @@
+﻿.drawer-container {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  &:hover > .drawer {
+    bottom: 0;
+  }
+  .drawer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    bottom: -200%;
+    -webkit-transition: bottom 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: bottom 0.5s;
+    color: #fff;
+    display: table;
+    &-content {
+      display: table-cell;
+      vertical-align: bottom;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+﻿.slider {
+  position: relative;
+  overflow: hidden;
+  .arrow {
+    position: absolute;
+    cursor: pointer;
+    top: calc(50% - 1.25em);
+    &.left {
+      left: 0px;
+    }
+    &.right {
+      right: 0px;
+    }
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+    display: block;
+
+    li {
+      min-width: 145px;
+      min-height: 200px;
+      display: inline-block;
+      border: 1px solid #000;
+      margin: 0 10px;
+      overflow: hidden;
+    }
+  }
+}

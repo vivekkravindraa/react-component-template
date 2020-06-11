@@ -1,0 +1,17 @@
+﻿.image-container {
+  height: 100%;
+  width: 100%;
+}
+.alt-image {
+  .alt-image {
+    display: none;
+  }
+  &:hover {
+    .main-image {
+      display: none;
+    }
+    .alt-image {
+      display: inline-block;
+    }
+  }
+}

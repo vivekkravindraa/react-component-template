@@ -1,0 +1,112 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~material-icons-font/material-icons-font.css';
+.material-icons {
+  vertical-align: middle;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$color_2: #989898;
+$color_1: #999999;
+$font_color_light: #ccc7ce;
+
+.arrow {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-block;
+
+  &:hover {
+    &:before,
+    &:after {
+      background: $color_1;
+    }
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    background: $font_color_light;
+    opacity: 0.5;
+    border-radius: 0.2rem;
+    display: block;
+  }
+
+  &.left,
+  &.right {
+    width: 1.667em;
+    &:before {
+      top: 79%;
+    }
+    &:after {
+      bottom: 55%;
+    }
+    &:before,
+    &:after {
+      left: -5%;
+      height: 12%;
+      width: 110%;
+    }
+  }
+
+  &.up,
+  &.down {
+    height: 1.667em;
+    &:before {
+      left: 55%;
+    }
+    &:after {
+      right: 55%;
+    }
+    &:before,
+    &:after {
+      top: -5%;
+      height: 110%;
+      width: 25%;
+    }
+  }
+
+  &.left {
+    &:before,
+    &:after {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+  &.right {
+    &:before,
+    &:after {
+      transform: rotate(-45deg);
+    }
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
+  &.up {
+    &:before,
+    &:after {
+      transform: rotate(-45deg);
+    }
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
+  &.down {
+    &:before,
+    &:after {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}

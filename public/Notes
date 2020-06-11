@@ -1,0 +1,5 @@
+﻿1. Buttons to have items inside: Done
+2. Header will have align props instead of className. (Applied to all components);Done
+3. ClassNames to be defaulted to existing template. Have provision to overwrite.: Done
+4. Convert all components to hooks:Done
+5. Components depending on life cycle are left as it is.

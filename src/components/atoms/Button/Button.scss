@@ -1,0 +1,41 @@
+﻿.btn {
+  & > * {
+    pointer-events: none;
+  }
+  margin: 0 15px;
+  &--outline {
+    border: 1px solid #000;
+    &.active {
+      background: #000;
+      color: #fff;
+      position: relative;
+      &:after {
+        content: ' ';
+        position: absolute;
+        height: 0;
+        display: block;
+        width: 0;
+        border-top: 14px solid #000;
+        bottom: -15px;
+        left: 50%;
+        border-bottom: 0px solid transparent;
+        border-right: 7px solid transparent;
+        border-left: 7px solid transparent;
+        transform: translate(-50%, 0);
+      }
+    }
+  }
+
+  &--default {
+    border-radius: 0;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
