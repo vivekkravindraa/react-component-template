@@ -10,7 +10,7 @@
     "font-awesome": "^4.7.0",
     "lodash": "^4.17.15",
     "material-icons-font": "^2.0.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "react": "^16.10.2",
     "react-auto-bind": "^0.4.2",
     "react-dom": "^16.10.2",
